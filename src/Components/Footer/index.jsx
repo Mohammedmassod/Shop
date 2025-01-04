@@ -3,16 +3,16 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   const yearText =
     startYear === currentYear ? startYear : `${startYear} - ${currentYear}`;
-  const developer = "Juan Díaz";
+  const developer = "محمد مسعود";
 
   return (
     <footer className="pb-4 text-center">
       <div>
         © {yearText}
         <span className="mx-1">•</span>
-        Developed by
+        تطوير بواسطة
         <a
-          href="http://jpdiaz.dev"
+          href="http://mohammed.dev"
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`Website developed by ${developer}`}

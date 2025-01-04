@@ -1,18 +1,18 @@
-# jpshop Contributing Guidelines
+# Shop Contributing Guidelines
 
 ## Getting Started
 
-1. [Fork](https://github.com/JuanPabloDiaz/jpshop/fork) the repository on GitHub.
+1. [Fork](https://github.com/JuanPabloDiaz/Shop/fork) the repository on GitHub.
 2. Clone the forked repository to your local machine.
 
    ```sh
-   git clone https://github.com/<your_github_username>/jpshop.git
+   git clone https://github.com/<your_github_username>/Shop.git
    ```
 
 3. Get into the root directory
 
    ```sh
-   cd jpshop
+   cd Shop
    ```
 
 4. Install all the dependencies

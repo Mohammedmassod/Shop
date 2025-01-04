@@ -10,7 +10,7 @@ function AuthProvider({ children }) {
 
   const login = (username, password) => {
     if (typeof username !== "string") {
-      throw new Error("Username must be a string");
+      throw new Error("إسم المستخدم يجب ان يكون حروف");
     }
     setUser({ username, password });
     navigate("/my-account");

@@ -12,6 +12,8 @@ import MyOrders from "../MyOrders/index.jsx";
 import NotFound from "../NotFound/index.jsx";
 import MyAccount from "../MyAccount/index.jsx";
 import SignIn from "../SignIn/index.jsx";
+import Signup from "../SignUp/index.jsx";
+// import ResetPassword from "../SignUp/index.jsx";
 import Logout from "../Logout/index.jsx";
 import PublicRoute from "./PublicRoute.jsx";
 import PrivateRoute from "./PrivateRoutes.jsx";
@@ -124,6 +126,15 @@ const AppRoutes = () => {
           </PublicRoute>
         }
       />
+      <Route
+        path="/sign-up"
+        element={
+          <PublicRoute restricted={true}>
+            <SignUp />
+          </PublicRoute>
+        }
+      />
+      
       <Route
         path="/logout"
         element={
