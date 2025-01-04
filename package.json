@@ -1,7 +1,7 @@
 {
   "name": "shopi-clone",
-  "author": "Juan Diaz",
-  "homepage": "https://jpshop.jpdiaz.dev",
+  "author": "Mohammed Massoud",
+  "homepage": "https://Shop.Mohammed.dev",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,7 +11,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "format": "npx prettier --write \"**/*.{js,jsx}\"",
-    "lighthouse": "npx unlighthouse --site https://jpshop.jpdiaz.dev"
+    "lighthouse": "npx unlighthouse --site https://Shop.Massoud.dev"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.0",

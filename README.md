@@ -14,9 +14,9 @@ It has a shopping cart feature that allows users to add products to their cart a
 
 Jp·Shop is not just an interface; it's an experience. ️It's simple, stylish, and fast, making online shopping a breeze.
 
-[![Jp·Shop](https://img.shields.io/badge/View%20Demo-000?style=for-the-badge&logo=Google-Chrome&logoColor=white)](https://jpshop.jpdiaz.dev/)
+[![Jp·Shop](https://img.shields.io/badge/View%20Demo-000?style=for-the-badge&logo=Google-Chrome&logoColor=white)](https://Shop.jpdiaz.dev/)
 
-[![Jp·Shop](https://img.shields.io/badge/View%20Code-000?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/JuanPabloDiaz/jpShop)
+[![Jp·Shop](https://img.shields.io/badge/View%20Code-000?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/JuanPabloDiaz/Shop)
 
 ## Description 📝
 
@@ -30,7 +30,7 @@ This project is a fully responsive web application that allows users to:
 
 ## Desktop Screenshots 🖥️
 
-<a align='center' href="https://jpshop.jpdiaz.dev/">
+<a align='center' href="https://Shop.jpdiaz.dev/">
 <img src="./public/assets/images/desktop.PNG">
 </a>
 
@@ -88,7 +88,7 @@ All contributions are welcome. Please read the [CONTRIBUTING guidelines](CONTRIB
 
 ### Contributors
 
-<a href="https://github.com/JuanPabloDiaz/jpshop/graphs/contributors"><img src="https://contrib.rocks/image?repo=JuanPabloDiaz/jpshop" /></a><!-- Made with [contrib.rocks](https://contrib.rocks). -->
+<a href="https://github.com/JuanPabloDiaz/Shop/graphs/contributors"><img src="https://contrib.rocks/image?repo=JuanPabloDiaz/Shop" /></a><!-- Made with [contrib.rocks](https://contrib.rocks). -->
 
 ## License 📜
 

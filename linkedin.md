@@ -4,7 +4,7 @@ Jp·Shop is a fully responsive online store, leveraging the power of React.js, t
 
 Jp·Shop consumes an API to fetch products. Stay tuned for more updates and feel free to check out the repo for more details. #webdevelopment #frontenddevelopment #coding
 
-https://jpshop.jpdiaz.dev/
+https://Shop.jpdiaz.dev/
 
 ---
 
@@ -24,4 +24,4 @@ Stay tuned for more updates and feel free to check out the repo for more details
 
 Check out the Project here: https://lnkd.in/dYUJKVYa
 
-https://jpshop.jpdiaz.dev/
+https://Shop.jpdiaz.dev/
