@@ -55,7 +55,7 @@ const Home = () => {
             </span>
           </h3>
           <p className="text-sm font-light text-gray-400/80">
-            Try searching for another product
+          حاول البحث عن منتج آخر
           </p>
         </div>
       );
@@ -65,7 +65,7 @@ const Home = () => {
   return (
     <Layout>
       <div className="relative mb-4 flex items-center justify-center">
-        <h1 className="text-md font-medium sm:text-xl">Products</h1>
+        <h1 className="text-md font-medium sm:text-xl">المنتجات</h1>
       </div>
       <input
         type="text"

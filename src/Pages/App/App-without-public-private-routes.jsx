@@ -31,6 +31,8 @@ const AppRoutes = () => {
     // Private Routes
     { path: "/my-account", element: <MyAccount /> },
     { path: "/sign-in", element: <SignIn /> },
+    { path: "/sign-up", element: <SignUp /> },
+    { path: "/reset-password", element: <ResetPassword /> },
     { path: "/logout", element: <Logout /> },
     // Not Found
     { path: "*", element: <NotFound /> },

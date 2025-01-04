@@ -14,6 +14,7 @@ const Navbar = () => {
     "absolute flex flex-col gap-2 w-36 py-2 px-1 transition-all duration-300 transform scale-95 opacity-0 group-hover:scale-100 group-hover:opacity-100 bg-white text-black rounded-b-md shadow-md shadow-gray-500 z-50";
 
   const context = useContext(AppContext);
+  const rtlStyle = { direction: "rtl", textAlign: "right" };
 
   //scrollPosition:
   const [showDropdown, setShowDropdown] = useState(false);
@@ -53,7 +54,7 @@ const Navbar = () => {
     }
   };
   return (
-    <header
+    <header style={rtlStyle}
       className={classNamesNavBarScroll(
         scrollPosition > 0
           ? "top-6 md:h-auto md:-translate-y-6 md:bg-white md:shadow"
@@ -76,7 +77,7 @@ const Navbar = () => {
                 className="h-14 w-14"
                 // className="w-10 h-10 sm:w-8 sm:h-8"
               />
-              <span>JP·Shop</span>
+              <span>ملك الإلكترونيات</span>
             </NavLink>
           </li>
           <li className={hoverStyle}>
@@ -85,7 +86,7 @@ const Navbar = () => {
               className={({ isActive }) => (isActive ? activeStyle : undefined)}
               onClick={() => context.setSearchByCategory(null)}
             >
-              All
+              الكل
             </NavLink>
           </li>
           <li
@@ -93,7 +94,7 @@ const Navbar = () => {
             onMouseLeave={() => setShowDropdownTech(false)}
             className={`group relative cursor-pointer ${hoverStyle}`}
           >
-            Electronics
+            إلكترونيات
             {showDropdownTech && (
               <div className={dropdownStyle}>
                 <NavLink
@@ -102,7 +103,7 @@ const Navbar = () => {
                     isActive ? activeStyle : undefined}`}
                   onClick={() => context.setSearchByCategory("smartphones")}
                 >
-                  Phone
+                  تلفونات
                 </NavLink>
                 <NavLink
                   to="/laptops"
@@ -110,7 +111,7 @@ const Navbar = () => {
                     isActive ? activeStyle : undefined}`}
                   onClick={() => context.setSearchByCategory("laptops")}
                 >
-                  Laptop
+                  لابتوبات
                 </NavLink>
               </div>
             )}
@@ -120,7 +121,7 @@ const Navbar = () => {
             onMouseLeave={() => setShowDropdown(false)}
             className={`group relative cursor-pointer ${hoverStyle}`}
           >
-            Cosmetics
+            مستحضرات التجميل
             {showDropdown && (
               <div className={dropdownStyle}>
                 <NavLink
@@ -129,7 +130,7 @@ const Navbar = () => {
                     isActive ? activeStyle : undefined}`}
                   onClick={() => context.setSearchByCategory("fragrances")}
                 >
-                  Perfumes
+                  العطور
                 </NavLink>
                 <NavLink
                   to="/skincare"
@@ -137,7 +138,7 @@ const Navbar = () => {
                     isActive ? activeStyle : undefined}`}
                   onClick={() => context.setSearchByCategory("skincare")}
                 >
-                  Skin Care
+                 العناية بالبشرة
                 </NavLink>
               </div>
             )}
@@ -148,7 +149,7 @@ const Navbar = () => {
               className={({ isActive }) => (isActive ? activeStyle : undefined)}
               onClick={() => context.setSearchByCategory("groceries")}
             >
-              Groceries
+              البقالة
             </NavLink>
           </li>
           <li className={hoverStyle}>
@@ -157,7 +158,7 @@ const Navbar = () => {
               className={({ isActive }) => (isActive ? activeStyle : undefined)}
               onClick={() => context.setSearchByCategory("home-decoration")}
             >
-              HomeGoods
+              السلع المنزلية
             </NavLink>
           </li>
         </ul>
@@ -171,7 +172,7 @@ const Navbar = () => {
                     isActive ? activeStyle : undefined
                   }
                 >
-                  My Account
+                 حسابي
                 </NavLink>
               </li>
               <li className={hoverStyle}>
@@ -181,7 +182,7 @@ const Navbar = () => {
                     isActive ? activeStyle : undefined
                   }
                 >
-                  My Orders
+                  طلباتي
                 </NavLink>
               </li>
               <li className={hoverStyle}>
@@ -203,7 +204,7 @@ const Navbar = () => {
                     isActive ? activeStyle : undefined
                   }
                 >
-                  Logout
+                  تسجيل الخروج
                 </NavLink>
               </li>
             </>
@@ -216,7 +217,7 @@ const Navbar = () => {
                   isActive ? activeStyle : undefined
                 }
               >
-                Sign In
+                تسجيل الدخول
               </NavLink>
             </li>
           )}

@@ -3,49 +3,68 @@ import Layout from "@/Components/Layout";
 import { useAuth } from "@/Context/auth";
 
 function SignIn() {
-  const auth = useAuth(); // console.log("auth: ", auth);
-
+  const auth = useAuth();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // console.log("username: ", username);
-    // console.log("password: ", password);
     auth.login(username, password);
-    //    onLogin(username, password); this is from copilot-signin. and onlogin needs to be passed in as a prop. at the beginning of... function SignIn({ onLogin }) {
   };
 
   return (
     <Layout>
-      <div className="relative mb-4 flex items-center justify-center">
-        <h1 className="text-md font-medium sm:text-xl">Sign In</h1>
+      <div className="flex h-screen items-center justify-center bg-gradient-to-br ">
+        {/* تكبير مربع الفورم */}
+        <div className="w-full max-w-lg rounded-lg bg-gradient-to-br from-white to-blue-300 p-10 shadow-xl">
+          <h2 className="mb-8 text-center text-3xl font-bold text-gray-800">
+            تسجيل الدخول
+          </h2>
+          <form onSubmit={handleLogin} className="flex flex-col gap-6">
+            <div className="relative">
+              <input
+                type="text"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                placeholder="إسم المستخدم"
+                className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+            <div className="relative">
+              <input
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="كلمة المرور"
+                className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+            <button
+              type="submit"
+              className="mt-6 w-full rounded-lg bg-blue-500 py-3 font-semibold text-white transition duration-300 hover:bg-blue-600"
+            >
+              تسجيل الدخول
+            </button>
+          </form>
+          <div className="mt-6 text-center text-sm text-gray-600">
+            <p>
+              هل نسيت كلمة المرور؟{" "}
+              <a
+                href="/reset-password"
+                className="text-blue-500 hover:underline"
+              >
+                استعادة كلمة المرور
+              </a>
+            </p>
+            <p>
+              ليس لديك حساب؟{" "}
+              <a href="/sign-up" className="text-blue-500 hover:underline">
+                إنشاء حساب جديد
+              </a>
+            </p>
+          </div>
+        </div>
       </div>
-      <form
-        onSubmit={handleLogin}
-        className="flex h-screen w-screen flex-col items-center justify-center gap-5"
-      >
-        <input
-          type="text"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          placeholder="Username"
-          className="rounded-md border border-gray-300 px-2 py-1"
-        />
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="Password"
-          className="rounded-md border border-gray-300 px-2 py-1"
-        />
-        <button
-          type="submit"
-          className="mt-2 w-48 rounded-lg bg-black py-2 font-medium text-white transition duration-300 hover:bg-gray-900/50"
-        >
-          Sign In
-        </button>
-      </form>
     </Layout>
   );
 }

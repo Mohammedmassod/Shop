@@ -11,7 +11,7 @@ const Logout = () => {
   return (
     <Layout>
       <div className="relative mb-4 flex items-center justify-center">
-        <h1 className="text-md font-medium sm:text-xl">Sign Out</h1>
+        <h1 className="text-md font-medium sm:text-xl">تسجيل الخروج</h1>
       </div>
       {/* <form
         onSubmit={handleLogout}

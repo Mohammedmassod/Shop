@@ -14,10 +14,13 @@ import MyOrders from "../MyOrders";
 import NotFound from "../NotFound";
 import MyAccount from "../MyAccount";
 import SignIn from "../SignIn";
+// import ResetPassword from "../ResetPassword";
+
 // import Logout from "../Logout";
 
 // Implementing the Private and Public Routes:
 import { useAuth } from "@/Context/auth"; // make sure you have a useAuth hook in your auth context
+import SignUp from "../SignUp";
 
 const PrivateRoute = ({ children }) => {
   const { user } = useAuth();
@@ -100,6 +103,14 @@ const AppRoutes = () => {
       element: (
         <PublicRoute>
           <SignIn />
+        </PublicRoute>
+      ),
+    },
+    {
+      path: "/sign-up",
+      element: (
+        <PublicRoute>
+          <SignUp />
         </PublicRoute>
       ),
     },

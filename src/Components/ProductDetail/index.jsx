@@ -53,7 +53,7 @@ const ProductDetail = (data) => {
       } fixed right-0 top-20 m-2 h-min w-[360px] flex-col rounded-lg border border-black bg-white p-2 shadow-xl shadow-black sm:h-[90vh] sm:bg-white/70`}
     >
       <div className="flex items-center justify-between p-6">
-        <h2 className="font-medium">Product Detail</h2>
+        <h2 className="font-medium">تفاصيل المنتج</h2>
         <HiOutlineX onClick={() => context.closeProductDetail()} />
       </div>
       {/* <figure className="flex justify-center items-center px-6">
@@ -83,13 +83,13 @@ const ProductDetail = (data) => {
           className="mt-2 flex w-32 items-center justify-evenly rounded-lg bg-black py-2 font-medium text-white transition duration-300 hover:bg-gray-900/50"
         >
           <HiOutlineArrowNarrowLeft />
-          Previous
+          السابق
         </button>
         <button
           onClick={handleNext}
           className="mt-2 flex w-32 items-center justify-evenly rounded-lg bg-black py-2 font-medium text-white transition duration-300 hover:bg-gray-900/50"
         >
-          Next
+          التالي
           <HiOutlineArrowNarrowRight />
         </button>
       </div>
@@ -107,38 +107,38 @@ const ProductDetail = (data) => {
           <tbody className="text-gray-700">
             <tr>
               <td className={tdElements}>
-                <HiOutlineCash /> Price
+                <HiOutlineCash /> السعر
               </td>
               <td>${context.productToShow?.price}</td>
             </tr>
             <tr>
               <td className={tdElements}>
-                <HiOutlineBadgeCheck /> Brand
+                <HiOutlineBadgeCheck /> الماركة
               </td>
               <td>{context.productToShow?.brand}</td>
             </tr>
             <tr>
               <td className={tdElements}>
                 <HiOutlinePhotograph />
-                Category
+                الفئة
               </td>
               <td>{context.productToShow?.category}</td>
             </tr>
             <tr>
               <td className={tdElements}>
-                <HiOutlineTag /> Discount
+                <HiOutlineTag /> الخصم
               </td>
               <td>{context.productToShow?.discountPercentage} %</td>
             </tr>
             <tr>
               <td className={tdElements}>
-                <HiOutlineStar /> Rating
+                <HiOutlineStar /> التصنيف
               </td>
               <td>{context.productToShow?.rating}</td>
             </tr>
             <tr>
               <td className={tdElements}>
-                <HiOutlineTruck /> Stock
+                <HiOutlineTruck /> المخزون
               </td>
               <td>{context.productToShow?.stock} available</td>
             </tr>
@@ -151,7 +151,7 @@ const ProductDetail = (data) => {
         {/* end table */}
         <div className={tdElements}>
           <HiOutlineDocumentText />
-          <p className="mb-1 mt-2">Description</p>
+          <p className="mb-1 mt-2">الوصف</p>
         </div>
         <p className="text-base text-gray-700">
           {context.productToShow?.description}

@@ -23,7 +23,7 @@ const MyOrder = () => {
         >
           <HiChevronLeft className="h-6 w-6 cursor-pointer" />
         </Link>
-        <h1 className="text-md font-medium sm:text-xl">My Order</h1>
+        <h1 className="text-md font-medium sm:text-xl">طلباتي</h1>
       </div>
       <div className="flex w-80 flex-col">
         {context.order?.[index]?.products.map((product) => (

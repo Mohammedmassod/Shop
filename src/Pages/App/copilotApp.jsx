@@ -9,6 +9,7 @@ import MyOrder from "../MyOrder";
 import MyOrders from "../MyOrders";
 import NotFound from "../NotFound";
 import SignIn from "../SignIn";
+import SignUp from "../SignUp";
 import Navbar from "@/Components/Navbar";
 import "./App.css";
 import CheckoutSideMenu from "@/Components/CheckoutSideMenu";
@@ -74,6 +75,8 @@ const AppRoutes = ({ user, onLogin }) => {
       ),
     },
     { path: "/sign-in", element: <SignIn onLogin={onLogin} /> },
+    { path: "/sign-up", element: <SignUp onLogin={onlogin} /> },
+    { path: "/reset-password", element: <ResetPassword onLogin={onlogin} /> },
     { path: "/logout", element: <LogOut onLogin={onLogin} /> },
     { path: "*", element: <NotFound /> },
   ]);
