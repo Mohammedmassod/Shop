@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* الاتجاه من اليمين إلى اليسار */
+body {
+    direction: rtl;
+    text-align: right;
+    background-color: #e6f7ff;
+    
+  }
+  
+  /* إعداد خاص للأيقونات أو العناصر التي تحتاج محاذاة عكسية */
+  .navbar ul li {
+    margin-right: 0;
+    margin-left: 16px; /* لتغيير محاذاة العناصر */
+  }
+  
+  /* تعديل خاصيات المكونات */
+  .navbar .logo {
+    float: right;
+  }
+  
+  .navbar .shopping-cart {
+    float: left;
+  }
+  
